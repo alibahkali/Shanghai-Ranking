@@ -1,0 +1,13 @@
+# *************OpenOffice Calc Macro to rename Sheets using a specific cell in every sheet*********** 
+# *************Created by Ali Bahkali.**************************
+# Sub Main
+#    Dim mSheet
+#    Dim mCell
+#    Dim i
+#    
+#    For i = 1 to 56
+#       mSheet = ThisComponent.Sheets(i)
+#       mCell = mSheet.getCellRangeByName("D1")
+#       mSheet.Name = mCell.String
+#    Next i
+# End Sub
