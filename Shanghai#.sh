@@ -136,7 +136,6 @@ do
         y19=$(cat $Universities$Site | grep  "<td><a href=\"../ARWU" | cut -d '>' -f67 | cut -d '<' -f1)
         y19min=$( echo $y19 | cut -d'-' -f1)
         y19max=$( echo $y19 | cut -d'-' -f2)
-        # NOTE="${a//[$'\t\r\n ']}";      
         y18=$(cat $Universities$Site | grep  "<td><a href=\"../ARWU" | cut -d '>' -f63 | cut -d '<' -f1)
         y17=$(cat $Universities$Site | grep  "<td><a href=\"../ARWU" | cut -d '>' -f59 | cut -d '<' -f1)
         y16=$(cat $Universities$Site | grep  "<td><a href=\"../ARWU" | cut -d '>' -f55 | cut -d '<' -f1)
@@ -162,18 +161,3 @@ do
     echo "********************** Done $FIELD ********************"
     
 done
-
-
-# *************OpenOffice Calc Macro to rename Sheets*********** 
-# *************Created by Ali Bahkali.**************************
-# Sub Main
-#    Dim mSheet
-#    Dim mCell
-#    Dim i
-#    
-#    For i = 1 to 56
-#       mSheet = ThisComponent.Sheets(i)
-#       mCell = mSheet.getCellRangeByName("D1")
-#       mSheet.Name = mCell.String
-#    Next i
-# End Sub
