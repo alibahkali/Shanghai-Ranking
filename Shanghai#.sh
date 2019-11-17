@@ -68,7 +68,7 @@ declare -i {Up,Ud,Sp,Sd}
     Sd=100
     re='^[0-9]+$';
     
- UserName="logarithm"
+ UserName="........." #Your computer username goes in the place of the dots
  Fields="/home/$UserName/shanghai/Fields/"
  FieldsTotal=${#FIELDS[@]}
  Universities="/home/$UserName/shanghai/Universities/"
